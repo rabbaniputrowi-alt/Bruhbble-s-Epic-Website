@@ -1,5 +1,7 @@
-.desc {
-    height: 100px;
-    width: 250px;
-    background-color: aqua;
+#desc {
+   width: 200px;
+   height: 150px;
+   font-family: 'Arial', sans-serif;
+   
+   
 }
