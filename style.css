@@ -1,7 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap');
+
+:root {
+   --brightYellow: #F4E02C;
+   --SecondYellow: #A29B35;
+   --Blue: #3A86E9;
+   --bgBlue: #1A56B2;
+   --font-color: #ffe2e2;
+
+   --space1: 4px;
+   --space2: 8px;
+   --space3: 12px;
+   --space4: 16px;
+
+   --radius1: 4px;
+
+   --font-heading: "Schoolbell", cursive;
+   --font-body: "Source Sans 3", sans-serif;
+}
+
+h1 {
+   font-size: 50px;
+   font-family: var(--font-heading);
+   color : var(--Blue);
+}
+
+.Style01 {
+   max-width: 800px;
+   margin: 0 auto;
+   padding : 20px;
+   font-family: var(--font-body);
+}
+
+.nav {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+}
+
 #desc {
-   width: 200px;
-   height: 150px;
-   font-family: 'Arial', sans-serif;
-   
-   
+   height : 100px;
+   width : 300px;
+   font-family: Arial, sans-serif;
+}
+
+#interests {
+
 }
