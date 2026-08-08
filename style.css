@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;700&family=Arimo:wght@400;700&family=Comic+Neue:wght@400;700&display=swap');
 
 :root {
    --brightYellow: #F4E02C;
@@ -15,14 +14,37 @@
 
    --radius1: 4px;
 
-   --font-heading: "Schoolbell", cursive;
-   --font-body: "Source Sans 3", sans-serif;
+   --font-header: "Gupter", serif;
+   --font-body: "Arimo", sans-serif;
+   --font-accent: "Comic Neue", cursive;
 }
 
+body {margin: 0;}
+
 h1 {
-   font-size: 50px;
-   font-family: var(--font-heading);
-   color : var(--Blue);
+   font-size: 100px;
+   font-family: var(--font-header);
+   font-style: italic;
+   line-height: 0.8;
+}
+
+.hBee {
+   font-size: 80px;
+   font-family: var(--font-header);
+   font-style: italic;
+}
+
+.hero-text h1 {
+   margin-bottom: 8px;
+}
+
+.hero-text p {
+   margin-top: 0;
+   margin-bottom: 24px;
+   font-size: 18px;
+   font-family: var(--font-body);
+   padding-left: 16px;
+   padding-right: 24px;
 }
 
 .Style01 {
@@ -34,16 +56,76 @@ h1 {
 
 .nav {
    display: flex;
-   gap: 20px;
+   justify-content: space-between;
    align-items: center;
+   background-color: var(--Blue);
+   padding: 16px 24px;
+}
+.nav a {
+   color: white;
+   text-decoration: none;
 }
 
-#desc {
-   height : 100px;
-   width : 300px;
-   font-family: Arial, sans-serif;
+.btn {
+   display: inline-flex;
+   align-items: center;
+   padding: 10px 20px;
+   border-radius: 999px;
+   background-color: var(--bgBlue);
+   color: white;
+   text-decoration: none;
+   border: 5px solid var(--Blue);
+   font-family: var(--font-accent);
 }
 
-#interests {
-
+.hero {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap:40px;
+   padding:40px;
+   
 }
+
+.dot {
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   display: inline-block;
+}
+.dot-red {background-color: #ff5f56; }
+.dot-green {background-color: #27c93f;}
+.dot-yellow {background-color: #ffbd2e;}
+
+.codetext{
+   background-color: #1e1e1e;
+    border-radius: var(--radius1);
+    overflow: hidden; 
+    width: 380px;
+}
+
+.editor-topbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #333;
+    padding: 8px 12px
+}
+
+.editor-filename {
+   color: #9d9b9b;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.code-body {
+    padding: 16px;
+    color: #d4d4d4;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.tok-comment { color: #6a9955; }  
+.tok-keyword { color: #569cd6; }  
+.tok-string  { color: #ce9178; }  
+.tok-var     { color: #9cdcfe; }   
